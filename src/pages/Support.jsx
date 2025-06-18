@@ -2,7 +2,7 @@
 
 function Support() {
   return (
-    <div>Support</div>
+    <div></div>
   )
 }
 
