@@ -70,7 +70,7 @@ const Footer = () => {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/1V48zLnbKN/"
               className="p-2 rounded-full bg-orange-800 hover:bg-orange-400 transition duration-500"
             >
               <FaFacebookF className="text-white" />
@@ -82,7 +82,7 @@ const Footer = () => {
               <FaTwitter className="text-white" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/m_ahmed_64?igsh=MTB0Y2YwZzFxaGE0bw=="
               className="p-2 rounded-full bg-orange-800 hover:bg-orange-400 transition duration-500"
             >
               <FaInstagram className="text-white" />

@@ -33,7 +33,7 @@ function NAVABAR() {
         {/* Logo */}
         <div className="text-white flex items-center gap-2">
           <img className="w-10" src={logo1} alt="Logo" />
-          <h1 className="text-2xl font-bold">Cofee</h1>
+          <h1 className="text-2xl font-bold">Coffee</h1>
         </div>
 
         {/* Desktop Menu */}
