@@ -30,7 +30,7 @@ function NAVABAR() {
   return (
     <div className="bg-[#3F181C] dark:bg-[#1c1c1c] h-[70px] fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center h-full px-4">
-      
+        {/* Logo */}
         <div className="text-white flex items-center gap-2">
           <img className="w-10" src={logo1} alt="Logo" />
           <h1 className="text-2xl font-bold">Cofee</h1>
@@ -48,6 +48,7 @@ function NAVABAR() {
           ))}
         </ul>
 
+        {/* Right Side Desktop */}
         <div className="hidden mdl:flex items-center gap-4">
           <button
             onClick={() => setDarkMode(!darkMode)}
@@ -55,9 +56,12 @@ function NAVABAR() {
           >
             {darkMode ? "Light" : "Dark"}
           </button>
+          <button className="bg-orange-500 text-white px-4 py-2 rounded font-medium hover:bg-orange-600 transition duration-300">
+            Get Started
+          </button>
         </div>
 
-        {/* Mobile Icon */}
+        {/* Mobile Menu Icon */}
         <div className="mdl:hidden text-white cursor-pointer" onClick={toggleMenu}>
           {openBar ? <IoMdClose fontSize="26px" /> : <FaBars fontSize="22px" />}
         </div>
@@ -85,6 +89,13 @@ function NAVABAR() {
             className="border border-white px-4 py-2 rounded text-sm hover:border-orange-400 hover:text-orange-300 transition"
           >
             {darkMode ? "Light Mode" : "Dark Mode"}
+          </button>
+
+          <button
+            onClick={closeMenu}
+            className="bg-orange-500 text-white px-4 py-2 rounded font-medium hover:bg-orange-600 transition duration-300"
+          >
+            Get Started
           </button>
         </div>
       )}
