@@ -3,14 +3,14 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-} from "react-icons/fa";
-import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
+} from "react-icons/fa"
+import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3F181C] text-gray-300 py-10">
+    <footer className="bg-[#3F181C] dark:bg-[#1c1c1c] text-gray-300 dark:text-gray-300 py-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-        {/* About Section */}
+  
         <div>
           <h2 className="text-xl font-bold mb-4 text-orange-400">About Us</h2>
           <p className="text-sm">
@@ -19,34 +19,33 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Links Section */}
         <div>
           <h2 className="text-xl font-bold mb-4 text-orange-400">Quick Links</h2>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/" className="hover:text-indigo-500">
+              <a href="/" className="hover:text-orange-300 transition">
                 Home
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:text-indigo-500">
+              <a href="/about" className="hover:text-orange-300 transition">
                 About
               </a>
             </li>
             <li>
-              <a href="/services" className="hover:text-indigo-500">
+              <a href="/services" className="hover:text-orange-300 transition">
                 Services
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-indigo-500">
+              <a href="/contact" className="hover:text-orange-300 transition">
                 Contact
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Contact Section */}
+    
         <div>
           <h2 className="text-xl font-bold mb-4 text-orange-400">Contact Us</h2>
           <ul className="space-y-4 text-sm">
@@ -66,8 +65,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Social Media and Copyright */}
-      <div className="mt-10 border-t border-gray-700 pt-6">
+
+      <div className="mt-10 border-t border-gray-700 dark:border-gray-600 pt-6">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-4">
             <a
@@ -95,13 +94,13 @@ const Footer = () => {
               <FaLinkedinIn className="text-white" />
             </a>
           </div>
-          <p className="text-sm mt-4 md:mt-0">
-            &copy; 2025 MOhamed ahmed seif. 
+          <p className="text-sm mt-4 md:mt-0 text-white dark:text-gray-400">
+            &copy; 2025 Mohamed Ahmed Seif.
           </p>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

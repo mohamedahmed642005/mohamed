@@ -18,6 +18,7 @@ const Layout = () => {
   return (
     <>
       <NAVABAR />
+         <main className="pt-[70px]"></main>
       <Outlet />
       <Footer />
     </>

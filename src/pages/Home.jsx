@@ -1,13 +1,6 @@
-import ContactUse from "../components/ContactUse"
-import Gallery from "../components/Gallery"
-import Hero from "../components/Hero"
-import Mneu from "../components/Mneu"
-import Testimonials from "../components/Testimonials"
-
-
 function Home() {
   return (
-    <div>
+    <div className="bg-white dark:bg-[#121212] text-black dark:text-white transition duration-300">
       <Hero />
       <Mneu />
       <Gallery />
@@ -16,5 +9,3 @@ function Home() {
     </div>
   )
 }
-
-export default Home

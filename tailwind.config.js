@@ -4,6 +4,10 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
+
+  darkMode: 'class',
+
   theme: {
     screens: {
       xs: "320px",
@@ -16,11 +20,8 @@ export default {
       xl: "1280px",
     },
 
-
-
-
     extend: {},
   },
+
   plugins: [],
 }
-
